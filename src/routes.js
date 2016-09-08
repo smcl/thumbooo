@@ -35,9 +35,6 @@ Spark.post("/thumb", function(req, res) {
 
     var width = orig.getWidth();
     var height = orig.getHeight();
-
-    print("width: " + width);
-    print("height: " + height);
     
     if (width > 100 && height > 100) {
 	if (width > height) {
@@ -49,14 +46,9 @@ Spark.post("/thumb", function(req, res) {
 	}
     }
 
-    print("new width: " + width);
-    print("new height: " + height);
-
-    var format = "png"; // TODO: specify in request
-    
     var thumb = orig.getScaledInstance(width, height, java.awt.image.BufferedImage.SCALE_SMOOTH);
 
-    ImageIO.write(toBufferedImage(thumb), format, outStream);
+    ImageIO.write(toBufferedImage(thumb), "png", outStream);
     
     res.raw().setContentType("application/octet-stream");
     res.raw().setHeader("Content-Disposition","attachment; filename=thumb-"+file.getName());
