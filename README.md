@@ -13,14 +13,10 @@ To get a thumbnail using cURL:
 $ ls screenshot.png thumb
 ls: cannot access 'thumb': No such file or directory
 screenshot.png
-$ curl -LO --form "file=@screenshot.png" http://localhost:8080/thumb
+$ curl -L -o thumb.png --form "file=@screenshot.png" http://localhost:8080/thumb
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  106k    0   929  100  105k   2386   271k --:--:-- --:--:-- --:--:--  270k
-
-$ ls thumb
-thumb
-$ mv thumb thumb.png
 ```
 
 Original image:
