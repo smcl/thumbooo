@@ -8,11 +8,8 @@ To start the server:
 $ jjs -scripting nasven.js -- src
 ```
 
-To get a thumbnail using cURL:
+To get a thumbnail from a file `screenshot.png` using cURL:
 ```
-$ ls screenshot.png thumb
-ls: cannot access 'thumb': No such file or directory
-screenshot.png
 $ curl -L -o thumb.png --form "file=@screenshot.png" http://localhost:8080/thumb
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
