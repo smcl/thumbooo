@@ -1,0 +1,11 @@
+{
+    "name": "thumbooo",
+    "version": "1.0.0",
+    "keywords": ["spark", "nashorn"],
+    "author": "@smcl",
+    "contributors": [],
+    "dependencies": {
+        "maven": ["com.sparkjava:spark-core:2.3"]
+    },
+    "engine": "nashorn 1.8.0_45"
+}
