@@ -15,8 +15,9 @@ ls: cannot access 'thumb': No such file or directory
 screenshot.png
 $ curl -LO --form "file=@screenshot.png" http://localhost:8080/thumb
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                   Dload  Upload   Total   Spent    Left  Speed
-				   100  625k    0  3893  100  621k   7515  1199k --:--:-- --:--:-- --:--:-- 1202k
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  106k    0   929  100  105k   2386   271k --:--:-- --:--:-- --:--:--  270k
+
 $ ls thumb
 thumb
 $ mv thumb thumb.png
