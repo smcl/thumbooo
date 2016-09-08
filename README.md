@@ -1,5 +1,5 @@
 # thumbooo
-Demonstration of Nashorn/Java using nasven - REST service to create thumbnails (rhymes with "dumbo")
+Rhymes with "dumbo". Demonstration of Nashorn/Java using nasven - web service to create thumbnails.
 
 ## Running
 
