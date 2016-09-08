@@ -21,3 +21,10 @@ $ ls thumb
 thumb
 $ mv thumb thumb.png
 ```
+
+Original image:
+
+![Original image](/img/screenshot.png?raw=true)
+
+Thumbnail image:
+![Thumbnail image](/img/thumb.png?raw=true)
