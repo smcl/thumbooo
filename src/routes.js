@@ -1,6 +1,5 @@
 var ImageIO = javax.imageio.ImageIO;
 var MultipartConfigElement = javax.servlet.MultipartConfigElement;
-var ByteArray = Java.type("byte[]");
 var BufferedImage = java.awt.image.BufferedImage;
 
 /* 
